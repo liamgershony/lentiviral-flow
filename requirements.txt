@@ -1,0 +1,14 @@
+# Python dependencies for the Lentiviral Insert Generator
+#
+# Install everything with:
+#     pip install -r requirements.txt
+#
+# After installing, download the human gene data for Stitchr (one time):
+#     stitchrdl -s human
+#
+# Note: Tkinter (the GUI library) is NOT a pip package. It ships with most
+# Python installs. If it is missing on a Homebrew Mac, install it with:
+#     brew install python-tk
+
+stitchr
+IMGTgeneDL
