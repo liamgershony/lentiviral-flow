@@ -1,2 +1,2 @@
 # lentiviral-flow
-Generate annotated lentiviral TCR inserts from V/J/CDR3 input
+Simple end to end tool to generate annotated lentiviral TCR inserts from V/J/CDR3 input
