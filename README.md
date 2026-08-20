@@ -4,7 +4,6 @@ Simple end to end tool to generate annotated lentiviral TCR inserts from V/J/CDR
 
 You type the six values into a window, click a button, and the tool runs [Stitchr](https://github.com/JamieHeather/stitchr), trims the chains correctly, builds the lentiviral insert, and opens an annotated document in your browser.
 
-No manual sequence trimming. No spreadsheets. No editing DNA by hand.
 
 ---
 
@@ -38,7 +37,6 @@ stitchrdl -s human
 brew install python-tk
 ```
 
-That's it. You only do this once.
 
 ---
 
