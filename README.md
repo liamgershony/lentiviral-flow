@@ -1,9 +1,6 @@
 # lentiviral-flow
 Simple end to end tool to generate annotated lentiviral TCR inserts from V/J/CDR3 input
 
-# Lentiviral Insert Generator
-
-A simple tool that turns a TCR's **V gene, J gene, and CDR3** into a finished, colour-coded **annotated lentiviral insert** — in one step.
 
 You type the six values into a window, click a button, and the tool runs [Stitchr](https://github.com/JamieHeather/stitchr), trims the chains correctly, builds the lentiviral insert, and opens an annotated document in your browser.
 
