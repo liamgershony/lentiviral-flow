@@ -229,14 +229,29 @@ def _aa_to_nt_cut(prot_index):
     return prot_index * 3
 
 def trim_alpha(nt):
+    """
+    Cut off the human TRAC constant region.
+    Per the lab's documented rule: the 'ATAT' DNA sequence marks where TRAC begins.
+    Remove everything from ATAT onward AND the single nucleotide immediately before
+    it. The result has remainder 0 and matches the control constructs exactly.
+    """
+    u = nt.upper()
+    # The TRAC region begins ATATCCAGAA... — anchor on the specific landmark first,
+    # then fall back to a bare ATAT if the longer context isn't present.
+    p = u.find('ATATCCAGAA')
+    if p == -1:
+        p = u.find('ATATCC')
+    if p == -1:
+        p = u.find('ATAT')
+    if p != -1:
+        return nt[:p-1]                 # drop everything from ATAT on, plus the 1 nt before
+    # Fallback (only if no ATAT landmark): use the TRAC protein marker.
     prot = translate(nt)
-    for m in ALPHA_MARKERS:
+    for m in ['DIQNPDP','DIQNPEP','IQNPDPAV','IQNPEPAV','DIQNP']:
         i = prot.find(m)
         if i != -1:
-            return nt[:i*3]              # remainder 0
-    p = nt.upper().find('ATATCCAGAA')
-    if p == -1: p = nt.upper().find('ATAT')
-    return nt[:p] if p != -1 else nt
+            return nt[:i*3]
+    return nt
 
 def trim_beta(nt):
     """
