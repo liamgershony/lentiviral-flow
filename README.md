@@ -6,7 +6,8 @@ You type the six values into a window, click a button, and the tool runs [Stitch
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/liamgershony/lentiviral-flow/blob/main/lentiviral-flow-googlecolab.ipynb)
 
-Video demonstration: https://www.youtube.com/watch?v=E01L3nJYV08
+Video Demonstration: https:/www.youtube.com/watch?v=E01L3nJVY08
+
 ---
 
 ## What it does
