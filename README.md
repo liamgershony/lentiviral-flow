@@ -5,6 +5,8 @@ Simple end to end tool to generate annotated lentiviral TCR inserts from V/J/CDR
 You type the six values into a window, click a button, and the tool runs [Stitchr](https://github.com/JamieHeather/stitchr), trims the chains correctly, builds the lentiviral insert, and opens an annotated document in your browser.
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/liamgershony/lentiviral-flow/blob/main/lentiviral-flow-googlecolab.ipynb)
+
+Video demonstration: https://www.youtube.com/watch?v=E01L3nJYV08
 ---
 
 ## What it does
